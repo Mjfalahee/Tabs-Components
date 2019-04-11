@@ -57,7 +57,10 @@
   padding-top: 60px;
 }
 .tabs .tabs-item {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  left: -500px;
+  transition: 1.5s;
   width: 75%;
 }
 .tabs .tabs-item .tabs-item-title {
@@ -66,7 +69,11 @@
   padding-bottom: 10px;
 }
 .tabs .tabs-item-selected {
-  display: block;
+  position: absolute;
+  width: 1200px;
+  left: 400px;
+  opacity: 1;
+  transition: 1s;
 }
 .tabs .tabs-links {
   display: flex;
