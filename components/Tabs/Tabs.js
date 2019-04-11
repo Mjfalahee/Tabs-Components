@@ -39,7 +39,7 @@ class TabItem {
   constructor(element) {
     // Assign this.element to the passed in element
     this.element = element
-    console.log(this.element)
+    //console.log(this.element)
   }
 
   select() {
@@ -66,7 +66,7 @@ class TabItem {
 */
 
 links = document.querySelectorAll('.tabs-link')
-console.log(links)
+//console.log(links)
 links.forEach(link => {
  return new TabLink(link)
 })
