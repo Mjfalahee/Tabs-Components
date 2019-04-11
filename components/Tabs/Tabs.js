@@ -26,12 +26,12 @@ class TabLink {
       element.classList.remove('tabs-link-selected')
     })
 
-    console.log(links)
+    //console.log(links)
     // Add a class named "tabs-link-selected" to this link
     this.element.classList.add('tabs-link-selected')
     
     // Call the select method on the item associated with this link
-
+    this.tabItem.select()
   }
 }
 
@@ -44,12 +44,14 @@ class TabItem {
 
   select() {
     // Select all ".tabs-item" elements from the DOM
-    const items = document.querySelectorAll('.tabs-items')
+    const items = document.querySelectorAll('.tabs-item')
 
     // Remove the class "tabs-item-selected" from each element
-    
+    Array.from(items).forEach(element => {
+      element.classList.remove('tabs-item-selected')
+    })
     // Add a class named "tabs-item-selected" to this element
-    //this.element;
+    this.element.classList.add('tabs-item-selected')
   }
 }
 
